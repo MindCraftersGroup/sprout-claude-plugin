@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "sprout": {
+      "type": "http",
+      "url": "https://api-sprout.z4k.app/mcp"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "sprout",
+  "displayName": "Sprout: AI Finance & Cash Flow",
+  "version": "1.0.0",
+  "description": "Review personal and business finances from your connected bank and credit card accounts: cash flow, spending categories, vendors, subscriptions, recurring bills, unusual charges, and transaction search. Read-only; Sprout cannot move money.",
+  "author": {
+    "name": "MindCrafters LLC",
+    "email": "support@chatwithyourfinance.com",
+    "url": "https://sprout.z4k.app"
+  },
+  "homepage": "https://sprout.z4k.app",
+  "repository": "https://github.com/MindCraftersGroup/sprout-claude-plugin",
+  "license": "MIT",
+  "keywords": ["finance", "personal finance", "business finance", "cash flow", "expense tracking", "spending analysis", "subscriptions", "recurring bills", "transactions", "small business", "freelancer", "bookkeeping preparation"],
+  "icon": "./assets/logo.png",
+  "documentationUrl": "https://sprout.z4k.app/support",
+  "supportUrl": "https://sprout.z4k.app/support",
+  "privacyPolicyUrl": "https://sprout.z4k.app/privacy",
+  "termsOfServiceUrl": "https://sprout.z4k.app/terms"
+}

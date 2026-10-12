@@ -1,0 +1,15 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "mindcrafters",
+  "owner": {"name": "MindCrafters LLC", "email": "support@chatwithyourfinance.com"},
+  "metadata": {"description": "MindCrafters plugins for Claude."},
+  "plugins": [
+    {
+      "name": "sprout",
+      "source": "./",
+      "description": "Review personal and business finances from connected bank and credit card accounts. Read-only.",
+      "category": "finance",
+      "tags": ["finance", "cash-flow", "subscriptions", "expenses"]
+    }
+  ]
+}
