@@ -15,7 +15,7 @@ A Sprout account (sign in with Google, Apple, or email) and a supported US or Ca
 
 ```
 claude plugin marketplace add MindCraftersGroup/sprout-claude-plugin
-claude plugin install sprout@mindcrafters
+claude plugin install sprout-finance@mindcrafters
 ```
 
 The first tool call asks you to connect Sprout. Claude signs you in through Sprout's OAuth server (WorkOS AuthKit); no credentials are stored in this plugin.

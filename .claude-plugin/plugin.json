@@ -1,6 +1,6 @@
 {
   "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
-  "name": "sprout",
+  "name": "sprout-finance",
   "displayName": "Sprout: AI Finance & Cash Flow",
   "version": "1.0.0",
   "description": "Review personal and business finances from your connected bank and credit card accounts: cash flow, spending categories, vendors, subscriptions, recurring bills, unusual charges, and transaction search. Read-only; Sprout cannot move money.",

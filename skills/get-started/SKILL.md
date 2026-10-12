@@ -15,7 +15,7 @@ Use this skill right after Sprout is installed, or when the person asks how to u
    - Business cash flow: `get_cash_flow` and, when helpful, `get_spending_breakdown` by counterparty for vendor spending. These are bank transactions, not accounting profit.
    - Subscriptions and bills: `get_recurring_charges` (detected repeating charges and their estimated annualized cost, separated by currency).
    - Balances: the balances from `list_accounts`.
-5. Call `open_sprout` with the screen for their choice: `{"view": "spending"}` for personal spending, business cash flow, vendor expenses, or subscriptions and bills, `{"view": "accounts"}` for balances. While Sprout is open, use its `show_screen` tool to change the screen instead of opening Sprout again.
+5. Call `open_sprout` with the screen for their choice: `{"view": "spending"}` for personal spending, business cash flow, vendor expenses, or subscriptions and bills, `{"view": "accounts"}` for balances.
 6. Suggest two follow-up questions, for example:
    - "Which subscriptions keep renewing?"
    - "Did anything unusual get charged recently?"

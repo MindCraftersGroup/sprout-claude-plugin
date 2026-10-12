@@ -5,7 +5,7 @@
   "metadata": {"description": "MindCrafters plugins for Claude."},
   "plugins": [
     {
-      "name": "sprout",
+      "name": "sprout-finance",
       "source": "./",
       "description": "Review personal and business finances from connected bank and credit card accounts. Read-only.",
       "category": "finance",
