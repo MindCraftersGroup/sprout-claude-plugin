@@ -2,7 +2,6 @@
   "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
   "name": "sprout-finance",
   "displayName": "Sprout: AI Finance & Cash Flow",
-  "version": "1.0.1",
   "description": "AI finance assistant for personal finance and business finance. Analyze connected bank and credit card accounts for cash flow, income, expenses, spending categories, merchant and vendor payments, subscriptions, recurring bills, duplicate or unusual charges, and transaction history. Built for individuals, freelancers, self-employed professionals, founders, and small-business owners. Read-only: Sprout cannot move money.",
   "author": {
     "name": "MindCrafters LLC",
@@ -17,6 +16,7 @@
   "supportUrl": "https://sprout.z4k.app/support",
   "privacyPolicyUrl": "https://sprout.z4k.app/privacy",
   "termsOfServiceUrl": "https://sprout.z4k.app/terms",
+  "version": "1.1.2",
   "keywords": [
     "finance",
     "AI finance assistant",
