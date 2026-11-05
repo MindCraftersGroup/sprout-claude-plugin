@@ -15,7 +15,7 @@ Try asking: "Where did my money go last month?", "Which vendors did my business 
 
 ## What it includes
 
-- A remote MCP server, `https://api-sprout.z4k.app/mcp`, with read-only finance tools (`list_accounts`, `get_cash_flow`, `get_spending_breakdown`, `get_period_totals`, `compare_periods`, `search_transactions`, `get_recurring_charges`, `find_unusual_transactions`, `get_data_health`, `open_sprout`, and others) plus `update_settings`, which saves your default reporting period.
+- A remote MCP server, `https://api-sprout.mindcrafters.group/mcp`, with read-only finance tools (`list_accounts`, `get_cash_flow`, `get_spending_breakdown`, `get_period_totals`, `compare_periods`, `search_transactions`, `get_recurring_charges`, `find_unusual_transactions`, `get_data_health`, `open_sprout`, and others) plus `update_settings`, which saves your default reporting period.
 - Four skills: `get-started`, `money-review`, `subscription-review`, and `charge-review`.
 
 ## Requirements
@@ -33,8 +33,8 @@ The first tool call asks you to connect Sprout. Claude signs you in through Spro
 
 ## Data and network access
 
-- Claude sends tool requests, including the dates, accounts, categories, and search text you ask about, to `https://api-sprout.z4k.app/mcp` with your OAuth access token. The server returns balances, transactions, and summaries from your own Sprout account only.
-- In Claude apps that render MCP Apps, `open_sprout` shows the Sprout web app from `https://app-sprout.z4k.app` beside the conversation. That view reports errors to Sprout's GlitchTip instance at `https://glitchtip.mindcrafters.group`.
+- Claude sends tool requests, including the dates, accounts, categories, and search text you ask about, to `https://api-sprout.mindcrafters.group/mcp` with your OAuth access token. The server returns balances, transactions, and summaries from your own Sprout account only.
+- In Claude apps that render MCP Apps, `open_sprout` shows the Sprout web app from `https://app-sprout.mindcrafters.group` beside the conversation. That view reports errors to Sprout's GlitchTip instance at `https://glitchtip.mindcrafters.group`.
 - Bank access is read-only. Sprout cannot move money, pay bills, cancel subscriptions, dispute charges, or execute trades. Net cash flow is not accounting profit, recurring dates and costs are estimates, and unusual-charge matches are items to review, not fraud findings.
 - Transaction descriptions come from banks and are treated as data, never as instructions.
 
