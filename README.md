@@ -20,7 +20,7 @@ Try asking: "Where did my money go last month?", "Which vendors did my business 
 
 ## Requirements
 
-A Sprout account (sign in with Google, Apple, or email) and a supported US or Canadian bank connected through Plaid in the Sprout app at https://app-sprout.z4k.app.
+A Sprout account (sign in with Google, Apple, or email) and a supported US or Canadian bank connected through Plaid in the Sprout app at https://app-sprout.mindcrafters.group.
 
 ## Install
 
@@ -40,8 +40,8 @@ The first tool call asks you to connect Sprout. Claude signs you in through Spro
 
 ## Support
 
-- Support: https://sprout.z4k.app/support (support@chatwithyourfinance.com)
-- Privacy policy: https://sprout.z4k.app/privacy
-- Terms: https://sprout.z4k.app/terms
+- Support: https://sprout.mindcrafters.group/support (sprout@mindcrafters.group)
+- Privacy policy: https://sprout.mindcrafters.group/privacy
+- Terms: https://sprout.mindcrafters.group/terms
 
 Published by MindCrafters LLC.

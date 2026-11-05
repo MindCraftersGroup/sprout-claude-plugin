@@ -5,17 +5,17 @@
   "description": "AI finance assistant for personal finance and business finance. Analyze connected bank and credit card accounts for cash flow, income, expenses, spending categories, merchant and vendor payments, subscriptions, recurring bills, duplicate or unusual charges, and transaction history. Built for individuals, freelancers, self-employed professionals, founders, and small-business owners. Read-only: Sprout cannot move money.",
   "author": {
     "name": "MindCrafters LLC",
-    "email": "support@chatwithyourfinance.com",
-    "url": "https://sprout.z4k.app"
+    "email": "sprout@mindcrafters.group",
+    "url": "https://sprout.mindcrafters.group"
   },
-  "homepage": "https://sprout.z4k.app",
+  "homepage": "https://sprout.mindcrafters.group",
   "repository": "https://github.com/MindCraftersGroup/sprout-claude-plugin",
   "license": "MIT",
   "icon": "./assets/logo.png",
-  "documentationUrl": "https://sprout.z4k.app/support",
-  "supportUrl": "https://sprout.z4k.app/support",
-  "privacyPolicyUrl": "https://sprout.z4k.app/privacy",
-  "termsOfServiceUrl": "https://sprout.z4k.app/terms",
+  "documentationUrl": "https://sprout.mindcrafters.group/support",
+  "supportUrl": "https://sprout.mindcrafters.group/support",
+  "privacyPolicyUrl": "https://sprout.mindcrafters.group/privacy",
+  "termsOfServiceUrl": "https://sprout.mindcrafters.group/terms",
   "version": "1.1.6",
   "keywords": [
     "finance",

@@ -3,7 +3,7 @@
   "name": "mindcrafters",
   "owner": {
     "name": "MindCrafters LLC",
-    "email": "support@chatwithyourfinance.com"
+    "email": "sprout@mindcrafters.group"
   },
   "metadata": {
     "description": "MindCrafters plugins for Claude: Sprout, the AI finance assistant for personal and business cash flow, expenses, and subscriptions."
@@ -14,23 +14,9 @@
       "source": "./",
       "description": "AI finance assistant for personal and business finance: cash flow, expense tracking, spending categories, vendors, subscriptions, recurring bills, and transaction search across connected bank and credit card accounts. Read-only.",
       "category": "finance",
-      "tags": [
-        "finance",
-        "personal-finance",
-        "business-finance",
-        "cash-flow",
-        "expense-tracking",
-        "budgeting",
-        "subscriptions",
-        "recurring-bills",
-        "transactions",
-        "bookkeeping",
-        "small-business",
-        "freelancer",
-        "plaid"
-      ],
+      "tags": ["finance", "personal-finance", "business-finance", "cash-flow", "expense-tracking", "budgeting", "subscriptions", "recurring-bills", "transactions", "bookkeeping", "small-business", "freelancer", "plaid"],
       "displayName": "Sprout: AI Finance & Cash Flow",
-      "homepage": "https://sprout.z4k.app"
+      "homepage": "https://sprout.mindcrafters.group"
     }
   ]
 }
