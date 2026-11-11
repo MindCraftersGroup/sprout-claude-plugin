@@ -7,9 +7,13 @@ description: Set up Sprout for personal finance or business finance. Start with 
 
 Use this skill right after Sprout is installed, or when the person asks how to use Sprout. If they installed Sprout during an existing task, continue that task in the same conversation instead.
 
-1. Call `get_profile` to confirm the connected Sprout account. If Sprout is not connected yet, the assistant asks the person to connect it and sign in; they can use Google, Apple, or email, or create a Sprout account on that screen.
+1. Call `get_profile` to confirm the connected Sprout account. If Sprout's tools are missing or ask for authorization, Sprout is not connected yet. Say so in one sentence, tell the person how to connect, and continue their request once they have:
+   - Claude on the web, desktop, or mobile, and Cowork: select **Connect** on the Sprout prompt, or open Customize → Connectors, choose Sprout, and select Connect.
+   - Claude Code: run `/mcp`, choose the Sprout server, and select Authenticate.
+   - ChatGPT: select Connect when ChatGPT asks, or open Sprout from Apps.
+   A browser tab opens where they sign in or create a Sprout account with Google, Apple, or email, then allow the assistant to read Sprout.
 2. Ask one question, unless they already said: "What would you like to review first: personal spending, business cash flow, subscriptions and bills, or balances?"
-3. Call `list_accounts`. If no accounts are connected, call `open_sprout` with `{"view": "accounts"}` and tell the person to choose to connect a bank there; Sprout opens a secure browser tab for the bank connection. Bank connections are available in the United States and Canada. Stop here.
+3. Call `list_accounts`. If no accounts are connected, call `open_sprout` with `{"view": "accounts"}` and tell the person to choose to connect a bank there; Sprout opens a secure browser tab for the bank connection. If their bank isn't listed yet, Sprout keeps their account and lets them know when it is. Stop here until they have connected one.
 4. For a personal-only or business-only review, use accounts the person identified; if unknown, ask which connected accounts to include. Do not classify an account from its name alone. Pass each selected `accountId` to the data tools. Use `get_data_health` if history is incomplete or a bank is still syncing. Answer their choice in two or three sentences:
    - Where the money goes: `get_cash_flow` for the current month (income, spending, net, and the largest category).
    - Business cash flow: `get_cash_flow` and, when helpful, `get_spending_breakdown` by counterparty for vendor spending. These are bank transactions, not accounting profit.

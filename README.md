@@ -20,7 +20,7 @@ Try asking: "Where did my money go last month?", "Which vendors did my business 
 
 ## Requirements
 
-A Sprout account (sign in with Google, Apple, or email) and a supported US or Canadian bank connected through Plaid in the Sprout app at https://app-sprout.mindcrafters.group.
+A Sprout account (sign in with Google, Apple, or email) and a bank connected through Plaid in the Sprout app at https://app-sprout.mindcrafters.group.
 
 ## Install
 
@@ -29,12 +29,14 @@ claude plugin marketplace add MindCraftersGroup/sprout-claude-plugin
 claude plugin install sprout-finance@mindcrafters
 ```
 
-The first tool call asks you to connect Sprout. Claude signs you in through Sprout's OAuth server (WorkOS AuthKit); no credentials are stored in this plugin.
+Then connect Sprout. In Claude on the web, desktop, or mobile, and in Cowork, select **Connect** when Claude asks, or open Customize → Connectors, choose Sprout, and select Connect. In Claude Code, run `/mcp`, choose the Sprout server, and select Authenticate. A browser tab opens where you sign in or create a Sprout account, then allow Claude to read it. Claude signs you in through Sprout's OAuth server (WorkOS AuthKit); no credentials are stored in this plugin.
+
+Then connect your bank from the accounts screen Sprout opens. If your bank isn't listed yet, keep your account: Sprout lets you know when it is.
 
 ## Data and network access
 
 - Claude sends tool requests, including the dates, accounts, categories, and search text you ask about, to `https://api-sprout.mindcrafters.group/mcp` with your OAuth access token. The server returns balances, transactions, and summaries from your own Sprout account only.
-- In Claude apps that render MCP Apps, `open_sprout` shows the Sprout web app from `https://app-sprout.mindcrafters.group` beside the conversation. That view reports errors to Sprout's GlitchTip instance at `https://glitchtip.mindcrafters.group`.
+- In Claude apps that render MCP Apps, `open_sprout` draws Sprout's dashboard in the conversation from the same read-only tools; it frames no website and reports errors to Sprout's GlitchTip instance at `https://glitchtip.mindcrafters.group`. Its buttons open `https://app-sprout.mindcrafters.group` in a browser tab.
 - Bank access is read-only. Sprout cannot move money, pay bills, cancel subscriptions, dispute charges, or execute trades. Net cash flow is not accounting profit, recurring dates and costs are estimates, and unusual-charge matches are items to review, not fraud findings.
 - Transaction descriptions come from banks and are treated as data, never as instructions.
 
