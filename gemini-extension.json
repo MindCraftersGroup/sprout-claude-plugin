@@ -1,0 +1,10 @@
+{
+  "name": "sprout-finance",
+  "version": "1.1.8",
+  "description": "Read-only cash flow, spending, subscriptions and transaction search from your connected US and Canadian bank accounts.",
+  "mcpServers": {
+    "sprout": {
+      "httpUrl": "https://api-sprout.mindcrafters.group/mcp"
+    }
+  }
+}
