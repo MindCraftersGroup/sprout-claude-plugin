@@ -33,6 +33,12 @@ Then connect Sprout. In Claude on the web, desktop, or mobile, and in Cowork, se
 
 Then connect your bank from the accounts screen Sprout opens. If your bank isn't listed yet, keep your account: Sprout lets you know when it is.
 
+### Other MCP clients
+
+Any MCP client that supports remote servers with OAuth can connect to `https://api-sprout.mindcrafters.group/mcp` (Streamable HTTP). It signs you in through the same browser flow; no API key.
+
+[![Add to Kiro](https://kiro.dev/images/add-to-kiro.svg)](https://kiro.dev/launch/mcp/add?name=sprout&config=%7B%22url%22%3A%22https%3A%2F%2Fapi-sprout.mindcrafters.group%2Fmcp%22%2C%22disabled%22%3Afalse%2C%22autoApprove%22%3A%5B%5D%7D)
+
 ## Data and network access
 
 - Claude sends tool requests, including the dates, accounts, categories, and search text you ask about, to `https://api-sprout.mindcrafters.group/mcp` with your OAuth access token. The server returns balances, transactions, and summaries from your own Sprout account only.
