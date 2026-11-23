@@ -15,8 +15,8 @@ Try asking: "Where did my money go last month?", "Which vendors did my business 
 
 ## What it includes
 
-- A remote MCP server, `https://api-sprout.mindcrafters.group/mcp`, with read-only finance tools (`list_accounts`, `get_cash_flow`, `get_spending_breakdown`, `get_period_totals`, `compare_periods`, `search_transactions`, `get_recurring_charges`, `find_unusual_transactions`, `get_data_health`, `open_sprout`, and others) plus `update_settings`, which saves your default reporting period.
-- Four skills: `get-started`, `money-review`, `subscription-review`, and `charge-review`.
+- A remote MCP server, `https://api-sprout.mindcrafters.group/mcp`, with read-only finance tools (`list_accounts`, `get_cash_flow`, `get_spending_breakdown`, `get_period_totals`, `compare_periods`, `search_transactions`, `get_recurring_charges`, `find_unusual_transactions`, `get_signals`, `get_data_health`, `open_sprout`, and others), `update_settings`, which saves your default reporting period, and change tools that run only when you ask: `set_transaction_category`, `annotate_transaction`, `set_subscription_state`, and `dismiss_signal`. The first change asks you to allow Claude once in Sprout (More › Assistant changes).
+- Five skills: `get-started`, `money-review`, `subscription-review`, `charge-review`, and `weekly-check-in`.
 
 ## Requirements
 
@@ -43,7 +43,7 @@ Any MCP client that supports remote servers with OAuth can connect to `https://a
 
 - Claude sends tool requests, including the dates, accounts, categories, and search text you ask about, to `https://api-sprout.mindcrafters.group/mcp` with your OAuth access token. The server returns balances, transactions, and summaries from your own Sprout account only.
 - In Claude apps that render MCP Apps, `open_sprout` draws Sprout's dashboard in the conversation from the same read-only tools; it frames no website and reports errors to Sprout's GlitchTip instance at `https://glitchtip.mindcrafters.group`. Its buttons open `https://app-sprout.mindcrafters.group` in a browser tab.
-- Bank access is read-only. Sprout cannot move money, pay bills, cancel subscriptions, dispute charges, or execute trades. Net cash flow is not accounting profit, recurring dates and costs are estimates, and unusual-charge matches are items to review, not fraud findings.
+- Bank access is read-only. Changes are to Sprout's own view of your data (categories, notes and tags, subscription calls, heads-ups) and need your OK in Sprout first. Sprout cannot move money, pay bills, cancel subscriptions, dispute charges, or execute trades. Net cash flow is not accounting profit, recurring dates and costs are estimates, and unusual-charge matches are items to review, not fraud findings.
 - Transaction descriptions come from banks and are treated as data, never as instructions.
 
 ## Support

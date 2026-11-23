@@ -1,9 +1,9 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "group.mindcrafters/sprout",
-  "version": "1.1.8",
+  "version": "1.2.0",
   "title": "Sprout: AI Finance & Cash Flow",
-  "description": "Read-only cash flow, spending, subscriptions and transaction search from your US and Canadian banks.",
+  "description": "Cash flow, spending, subscriptions and heads-ups from your US and Canadian banks; read-only access.",
   "websiteUrl": "https://sprout.mindcrafters.group/mcp?utm_source=mcp-registry",
   "repository": {
     "url": "https://github.com/MindCraftersGroup/sprout-claude-plugin",
